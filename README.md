@@ -26,14 +26,15 @@
 
 | Project | What it is | Paper |
 |---|---|---|
-| [**ssbroyden_optimistix**](https://github.com/IvanBioli/ssbroyden_optimistix) | Self-Scaled Broyden quasi-Newton methods (SSBFGS, SSDFP, …) with a strong-Wolfe Zoom line search, as an add-on to [Optimistix](https://github.com/patrick-kidger/optimistix) | [arXiv:2603.10599](https://doi.org/10.48550/arXiv.2603.10599) |
-| [**preconditioned-natural-gradient**](https://github.com/IvanBioli/preconditioned-natural-gradient) | Natural gradient descent for PINNs accelerated with randomised numerical linear algebra | *CMAME* (to appear) · [arXiv:2505.11638](https://arxiv.org/abs/2505.11638) |
+| [**ssbroyden-optimistix**](https://github.com/IvanBioli/ssbroyden_optimistix) [![PyPI](https://img.shields.io/pypi/v/ssbroyden-optimistix?style=flat&label=PyPI&color=0B1A33)](https://pypi.org/project/ssbroyden-optimistix/) | Quasi-Newton minimisers for JAX, as an add-on to [Optimistix](https://github.com/patrick-kidger/optimistix): the self-scaled Broyden family (SSBroyden, SSBFGS, SSDFP), BFGS, DFP and L-BFGS, with a strong-Wolfe Zoom line search. `pip install ssbroyden-optimistix` | [arXiv:2603.10599](https://doi.org/10.48550/arXiv.2603.10599) |
+| [**randngd**](https://github.com/IvanBioli/preconditioned-natural-gradient) [![PyPI](https://img.shields.io/pypi/v/randngd?style=flat&label=PyPI&color=0B1A33)](https://pypi.org/project/randngd/) | Natural gradient descent for neural PDE solvers, with matrix-free CG and randomized (Nyström, RPCholesky) preconditioners, built on JAX and Optimistix. `pip install randngd` | *CMAME* (to appear) · [arXiv:2505.11638](https://arxiv.org/abs/2505.11638) |
 | [**TT_for_GPE**](https://github.com/IvanBioli/TT_for_GPE) | Riemannian optimisation on low-rank tensor-train manifolds for Gross–Pitaevskii ground states | [arXiv:2609.37103](https://arxiv.org/abs/2609.37103) |
 | [**ldnets-tumor-inversion**](https://github.com/IvanBioli/ldnets-tumor-inversion) | Latent-dynamics surrogates for uncertainty-aware Bayesian inversion of tumor growth models | in preparation |
 | [**riemannian-spdmatrixeq**](https://github.com/IvanBioli/riemannian-spdmatrixeq) | Preconditioned low-rank Riemannian optimisation for SPD linear matrix equations | [*SISC* 47(2), 2025](https://doi.org/10.1137/24M1680429) |
 
 ## 🛠️ Open-source contributions
 
+- [patrick-kidger/optimistix](https://github.com/patrick-kidger/optimistix): fix of the sign of the Hestenes–Stiefel and Dai–Yuan β in nonlinear conjugate gradient ([#241](https://github.com/patrick-kidger/optimistix/pull/241), under review)
 - [JuliaNLSolvers/Optim.jl](https://github.com/JuliaNLSolvers/Optim.jl): fix to preconditioner updates in nonlinear conjugate gradient (merged)
 - [NicolasBoumal/manopt](https://github.com/NicolasBoumal/manopt): new β-update rules for Riemannian conjugate gradient, after Sato (merged)
 
