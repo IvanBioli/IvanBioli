@@ -15,22 +15,49 @@
 🏎️ &nbsp; Previously: reinforcement learning for live race strategy at the **Alfa Romeo F1 Team**.\
 🤝 &nbsp; **Open to collaborations in research and industry:** simulation, surrogate modelling, optimisation and machine learning for engineering and scientific problems.
 
+## 📦 Libraries you can use
+
+Open-source optimisers for JAX, installable from PyPI, with documentation and examples. Both are drop-in [Optimistix](https://github.com/patrick-kidger/optimistix) minimisers that work on any pytree of parameters.
+
+### [ssbroyden-optimistix](https://github.com/IvanBioli/ssbroyden_optimistix) &nbsp; [![PyPI](https://img.shields.io/pypi/v/ssbroyden-optimistix?style=flat&label=PyPI&color=0B1A33)](https://pypi.org/project/ssbroyden-optimistix/)
+
+Quasi-Newton optimisers for smooth, full-batch problems where Adam stalls and you need high accuracy: self-scaled Broyden (SSBroyden, SSBFGS), BFGS and L-BFGS with a strong-Wolfe line search.
+
+```bash
+pip install ssbroyden-optimistix
+```
+```python
+sol = optx.minimise(loss, ssbroyden_optimistix.SSBroyden(rtol=1e-10, atol=1e-10), params)
+```
+
+### [randngd](https://github.com/IvanBioli/preconditioned-natural-gradient) &nbsp; [![PyPI](https://img.shields.io/pypi/v/randngd?style=flat&label=PyPI&color=0B1A33)](https://pypi.org/project/randngd/)
+
+Natural gradient descent (Gauss–Newton) for least-squares training of neural networks, such as neural PDE solvers: matrix-free CG with randomized preconditioners (Nyström, randomly pivoted Cholesky), so NGD scales to larger networks. Automatic damping, no learning rate to tune.
+
+```bash
+pip install randngd
+```
+```python
+metric = randngd.metrics.gauss_newton([(residual, points)], params)
+sol = optx.minimise(loss, randngd.ngd_solver(randngd.NystromNGD(metric)), params)
+```
+
+## 📄 Code of my papers
+
+| Repository | What it is | Paper |
+|---|---|---|
+| [**TT_for_GPE**](https://github.com/IvanBioli/TT_for_GPE) | Riemannian optimisation on low-rank tensor-train manifolds for Gross–Pitaevskii ground states | [arXiv:2609.37103](https://arxiv.org/abs/2609.37103) |
+| [**ldnets-tumor-inversion**](https://github.com/IvanBioli/ldnets-tumor-inversion) | Latent-dynamics surrogates for uncertainty-aware Bayesian inversion of tumor growth models | in preparation |
+| [**riemannian-spdmatrixeq**](https://github.com/IvanBioli/riemannian-spdmatrixeq) | Preconditioned low-rank Riemannian optimisation for SPD linear matrix equations | [*SISC* 47(2), 2025](https://doi.org/10.1137/24M1680429) |
+
+The libraries above also come with papers: ssbroyden-optimistix, [arXiv:2603.10599](https://doi.org/10.48550/arXiv.2603.10599); randngd, *CMAME* (to appear), [arXiv:2505.11638](https://arxiv.org/abs/2505.11638).
+
 ## 🔬 What I work on
 
 - **Scientific machine learning:** neural PDE solvers, physics-informed training, optimisers for neural networks
 - **Numerical PDEs:** finite elements and isogeometric analysis, discretisation and error analysis
 - **Inverse problems and UQ:** Bayesian inversion and model calibration with neural surrogates
 - **Numerical linear algebra:** low-rank methods, Riemannian optimisation, randomised preconditioning
-
-## 📦 Selected code
-
-| Project | What it is | Paper |
-|---|---|---|
-| [**ssbroyden-optimistix**](https://github.com/IvanBioli/ssbroyden_optimistix) [![PyPI](https://img.shields.io/pypi/v/ssbroyden-optimistix?style=flat&label=PyPI&color=0B1A33)](https://pypi.org/project/ssbroyden-optimistix/) | Quasi-Newton minimisers for JAX, as an add-on to [Optimistix](https://github.com/patrick-kidger/optimistix): the self-scaled Broyden family (SSBroyden, SSBFGS, SSDFP), BFGS, DFP and L-BFGS, with a strong-Wolfe Zoom line search. `pip install ssbroyden-optimistix` | [arXiv:2603.10599](https://doi.org/10.48550/arXiv.2603.10599) |
-| [**randngd**](https://github.com/IvanBioli/preconditioned-natural-gradient) [![PyPI](https://img.shields.io/pypi/v/randngd?style=flat&label=PyPI&color=0B1A33)](https://pypi.org/project/randngd/) | Natural gradient descent for neural PDE solvers, with matrix-free CG and randomized (Nyström, RPCholesky) preconditioners, built on JAX and Optimistix. `pip install randngd` | *CMAME* (to appear) · [arXiv:2505.11638](https://arxiv.org/abs/2505.11638) |
-| [**TT_for_GPE**](https://github.com/IvanBioli/TT_for_GPE) | Riemannian optimisation on low-rank tensor-train manifolds for Gross–Pitaevskii ground states | [arXiv:2609.37103](https://arxiv.org/abs/2609.37103) |
-| [**ldnets-tumor-inversion**](https://github.com/IvanBioli/ldnets-tumor-inversion) | Latent-dynamics surrogates for uncertainty-aware Bayesian inversion of tumor growth models | in preparation |
-| [**riemannian-spdmatrixeq**](https://github.com/IvanBioli/riemannian-spdmatrixeq) | Preconditioned low-rank Riemannian optimisation for SPD linear matrix equations | [*SISC* 47(2), 2025](https://doi.org/10.1137/24M1680429) |
 
 ## 🛠️ Open-source contributions
 
