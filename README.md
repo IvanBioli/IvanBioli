@@ -5,7 +5,7 @@
 <a href="https://ivanbioli.github.io"><img alt="Website" src="https://img.shields.io/badge/-ivanbioli.github.io-0B1A33?style=flat&logo=googlechrome&logoColor=white"/></a> &nbsp;
 <a href="https://scholar.google.com/citations?user=yYMTqgYAAAAJ"><img alt="Google Scholar" src="https://img.shields.io/badge/-Google_Scholar-0B1A33?style=flat&logo=googlescholar&logoColor=4285F4"/></a> &nbsp;
 <a href="https://orcid.org/0009-0003-1172-4362"><img alt="ORCID" src="https://img.shields.io/badge/-ORCID-0B1A33?style=flat&logo=orcid&logoColor=A6CE39"/></a> &nbsp;
-<a href="https://www.linkedin.com/in/ivan-bioli-059a001a6/"><img alt="LinkedIn" src="https://img.shields.io/badge/-LinkedIn-0B1A33?style=flat&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iIzBBNjZDMiIgZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYTIuMDYyIDIuMDYyIDAgMSAxIDAtNC4xMjQgMi4wNjIgMi4wNjIgMCAwIDEgMCA0LjEyNHpNNy4xMTkgMjAuNDUySDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyMiAwaC4wMDN6Ii8+PC9zdmc+"/></a> &nbsp;
+<a href="https://www.linkedin.com/in/ivan-bioli"><img alt="LinkedIn" src="https://img.shields.io/badge/-LinkedIn-0B1A33?style=flat&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iIzBBNjZDMiIgZD0iTTIwLjQ0NyAyMC40NTJoLTMuNTU0di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzctMS44NTItMy4wMzctMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2N0g5LjM1MVY5aDMuNDE0djEuNTYxaC4wNDZjLjQ3Ny0uOSAxLjYzNy0xLjg1IDMuMzctMS44NSAzLjYwMSAwIDQuMjY3IDIuMzcgNC4yNjcgNS40NTV2Ni4yODZ6TTUuMzM3IDcuNDMzYTIuMDYyIDIuMDYyIDAgMSAxIDAtNC4xMjQgMi4wNjIgMi4wNjIgMCAwIDEgMCA0LjEyNHpNNy4xMTkgMjAuNDUySDMuNTU1VjloMy41NjR2MTEuNDUyek0yMi4yMjUgMEgxLjc3MUMuNzkyIDAgMCAuNzc0IDAgMS43Mjl2MjAuNTQyQzAgMjMuMjI3Ljc5MiAyNCAxLjc3MSAyNGgyMC40NTFDMjMuMiAyNCAyNCAyMy4yMjcgMjQgMjIuMjcxVjEuNzI5QzI0IC43NzQgMjMuMiAwIDIyLjIyMiAwaC4wMDN6Ii8+PC9zdmc+"/></a> &nbsp;
 <a href="mailto:ivan.bioli@gmail.com"><img alt="Email" src="https://img.shields.io/badge/-ivan.bioli@gmail.com-0B1A33?style=flat&logo=gmail&logoColor=EA4335"/></a>
 
 ## 👨🏻‍💻 About me
@@ -50,7 +50,7 @@ sol = optx.minimise(loss, randngd.ngd_solver(randngd.NystromNGD(metric)), params
 | [**ldnets-tumor-inversion**](https://github.com/IvanBioli/ldnets-tumor-inversion) | Latent-dynamics surrogates for uncertainty-aware Bayesian inversion of tumor growth models | in preparation |
 | [**riemannian-spdmatrixeq**](https://github.com/IvanBioli/riemannian-spdmatrixeq) | Preconditioned low-rank Riemannian optimisation for SPD linear matrix equations | [*SISC* 47(2), 2025](https://doi.org/10.1137/24M1680429) |
 
-The libraries above also come with papers: ssbroyden-optimistix, [arXiv:2603.10599](https://doi.org/10.48550/arXiv.2603.10599); randngd, *CMAME* (to appear), [arXiv:2505.11638](https://arxiv.org/abs/2505.11638).
+The libraries above also come with papers: ssbroyden-optimistix, [arXiv:2603.10599](https://doi.org/10.48550/arXiv.2603.10599); randngd, [*CMAME* 464, 119456 (2027)](https://doi.org/10.1016/j.cma.2026.119456).
 
 ## 🔬 What I work on
 
@@ -62,6 +62,8 @@ The libraries above also come with papers: ssbroyden-optimistix, [arXiv:2603.105
 ## 🛠️ Open-source contributions
 
 - [patrick-kidger/optimistix](https://github.com/patrick-kidger/optimistix): fix of the sign of the Hestenes–Stiefel and Dai–Yuan β in nonlinear conjugate gradient ([#241](https://github.com/patrick-kidger/optimistix/pull/241), under review)
+- [pnkraemer/matfree](https://github.com/pnkraemer/matfree): randomly pivoted (block) partial Cholesky for low-rank approximation ([#295](https://github.com/pnkraemer/matfree/pull/295), under review)
+- [pymanopt/pymanopt](https://github.com/pymanopt/pymanopt): constant line searcher for fixed step sizes, stopping on a NaN gradient norm, and logging of the initial and final iterates ([#321](https://github.com/pymanopt/pymanopt/pull/321), [#322](https://github.com/pymanopt/pymanopt/pull/322), [#323](https://github.com/pymanopt/pymanopt/pull/323), under review)
 - [JuliaNLSolvers/Optim.jl](https://github.com/JuliaNLSolvers/Optim.jl): fix to preconditioner updates in nonlinear conjugate gradient (merged)
 - [NicolasBoumal/manopt](https://github.com/NicolasBoumal/manopt): new β-update rules for Riemannian conjugate gradient, after Sato (merged)
 
