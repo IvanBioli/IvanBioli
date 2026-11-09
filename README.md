@@ -54,10 +54,10 @@ The libraries above also come with papers: ssbroyden-optimistix, [arXiv:2603.105
 
 ## 🔬 What I work on
 
-- **Scientific machine learning:** neural PDE solvers, physics-informed training, optimisers for neural networks
-- **Numerical PDEs:** finite elements and isogeometric analysis, discretisation and error analysis
+- **Scientific machine learning:** neural PDE solvers and optimisers for training them
 - **Inverse problems and UQ:** Bayesian inversion and model calibration with neural surrogates
 - **Numerical linear algebra:** low-rank methods, Riemannian optimisation, randomised preconditioning
+- **Numerical PDEs:** finite elements and isogeometric analysis, discretisation and error analysis
 
 ## 🛠️ Open-source contributions
 
